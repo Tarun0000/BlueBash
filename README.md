@@ -1,5 +1,7 @@
 # BlueBash
 Data science assignment on Beet Dataset to train ml to predict overall beer rating
+
+
 Introduction
 This data set is a Beer data-set for your Data Science case-study round. You are expected to
 build a Machine Learning model which predicts the overall rating of the beer. (“review/overall”
@@ -39,5 +41,38 @@ user/birthdayRaw
 user/birthdayUnix
 user/gender - gender of the user (if specified)
 user/profileName - profile name of the user
-PREFERRED LANGUAGE:
-Python or R
+
+
+# Solution
+1-First we Fill Black Column according to their best sutable solution 
+2-From review/timeStruct we extract the Weekday, Months , and Hour
+3- Train Model on differnet Regressor Model
+model_name=model_random_forest
+score - MAE: 0.3032635967621541
+        MSE: 0.1592688306893398
+        RMSE 0.39908499181169393
+        R2 Score 0.6631417122636356
+
+model_name- LinearRegressor
+score-  MAE: 0.3032828239529926
+        MSE: 0.16271812002617958
+        RMSE 0.40338334128491177
+        R2 Score 0.6558463632936822
+
+model_name - KNeighborsRegressor
+score - MAE: 0.3185593604143378
+        MSE: 0.1744450826136787
+        RMSE 0.41766623350910076
+        R2 Score 0.6310434905628677
+
+model_name -LGBMRegressor
+score - MAE: 0.3007591807711276
+        MSE: 0.15672558287124133
+        RMSE 0.3958858204978316
+        R2 Score 0.6685207566226976
+
+model_name = Ridge
+score - MAE: 0.30328240235249565
+        MSE: 0.1627159956264549
+        RMSE 0.40338070804942433
+        R2 Score 0.6558508564619352
